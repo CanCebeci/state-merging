@@ -1,0 +1,12 @@
+base64 12 dslab-worf.epfl.ch 12 basename 12 dslab-worf.epfl.ch 12 cat 12 dslab-worf.epfl.ch 12 cksum 12 dslab-worf.epfl.ch 12
+cp 12 dslab-worf.epfl.ch 12 csplit 12 dslab-worf.epfl.ch 12 cut 12 dslab-worf.epfl.ch 12 date 12 dslab-worf.epfl.ch 12
+df 12 dslab-worf.epfl.ch 12 dirname 12 dslab-worf.epfl.ch 12 echo 12 dslab-worf.epfl.ch 12 env 12 dslab-worf.epfl.ch 12
+expr 12 dslab-worf.epfl.ch 12 factor 12 dslab-worf.epfl.ch 12 fmt 12 dslab-worf.epfl.ch 12 fold 12 dslab-worf.epfl.ch 12
+head 12 dslab-worf.epfl.ch 12 ls 12 dslab-worf.epfl.ch 12 mv 12 dslab-worf.epfl.ch 12 nl 12 dslab-worf.epfl.ch 12
+od 12 dslab-worf.epfl.ch 12 paste 12 dslab-worf.epfl.ch 12 pr 12 dslab-worf.epfl.ch 12 printf 12 dslab-worf.epfl.ch 12
+ptx 12 dslab-worf.epfl.ch 12 readlink 12 dslab-worf.epfl.ch 12 rm 12 dslab-worf.epfl.ch 12 seq 12 dslab-worf.epfl.ch 12
+sha1sum 12 dslab-worf.epfl.ch 12 sha256sum 12 dslab-worf.epfl.ch 12 sha512sum 12 dslab-worf.epfl.ch 12 shuf 12 dslab-worf.epfl.ch 12
+sort 12 dslab-worf.epfl.ch 12 split 12 dslab-worf.epfl.ch 12 stty 12 dslab-worf.epfl.ch 12 sum 12 dslab-worf.epfl.ch 12
+tac 12 dslab-worf.epfl.ch 12 tail 12 dslab-worf.epfl.ch 12 tee 12 dslab-worf.epfl.ch 12 test 12 dslab-worf.epfl.ch 12
+tr 12 dslab-worf.epfl.ch 12 tsort 12 dslab-worf.epfl.ch 12 uniq 12 dslab-worf.epfl.ch 12 uptime 12 dslab-worf.epfl.ch 12
+vdir 12 dslab-worf.epfl.ch 12 wc 12 dslab-worf.epfl.ch 12 who 12 dslab-worf.epfl.ch 12

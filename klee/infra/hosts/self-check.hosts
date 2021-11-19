@@ -1,0 +1,4 @@
+# <Hostname>		<# of cores> <Cloud9 root>			<Username>	<Exp. dir>			<Targets root>
+dslab-worf.epfl.ch	48	     /home/stefan/symbex/state-merging	stefan		/var/state-merging/data 	 /var/cloud9/targets/coreutils-6.10
+# This is a special 0-core entry, describing the local host
+dslab-stefan.epfl.ch	0	     /home/stefan/symbex/state-merging	-		/var/state-merging/data		-

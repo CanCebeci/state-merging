@@ -1,0 +1,24 @@
+base64 24 dslab-worf.epfl.ch 24 basename 24 dslab-worf.epfl.ch 24
+cat 24 dslab-worf.epfl.ch 24 cksum 24 dslab-worf.epfl.ch 24
+cp 24 dslab-worf.epfl.ch 24 csplit 24 dslab-worf.epfl.ch 24
+cut 24 dslab-worf.epfl.ch 24 date 24 dslab-worf.epfl.ch 24
+df 24 dslab-worf.epfl.ch 24 dirname 24 dslab-worf.epfl.ch 24
+echo 24 dslab-worf.epfl.ch 24 env 24 dslab-worf.epfl.ch 24
+expr 24 dslab-worf.epfl.ch 24 factor 24 dslab-worf.epfl.ch 24
+fmt 24 dslab-worf.epfl.ch 24 fold 24 dslab-worf.epfl.ch 24
+head 24 dslab-worf.epfl.ch 24 ls 24 dslab-worf.epfl.ch 24
+mv 24 dslab-worf.epfl.ch 24 nl 24 dslab-worf.epfl.ch 24
+od 24 dslab-worf.epfl.ch 24 paste 24 dslab-worf.epfl.ch 24
+pr 24 dslab-worf.epfl.ch 24 printf 24 dslab-worf.epfl.ch 24
+ptx 24 dslab-worf.epfl.ch 24 readlink 24 dslab-worf.epfl.ch 24
+rm 24 dslab-worf.epfl.ch 24 seq 24 dslab-worf.epfl.ch 24
+sha1sum 24 dslab-worf.epfl.ch 24 sha256sum 24 dslab-worf.epfl.ch 24
+sha512sum 24 dslab-worf.epfl.ch 24 shuf 24 dslab-worf.epfl.ch 24
+sort 24 dslab-worf.epfl.ch 24 split 24 dslab-worf.epfl.ch 24
+stty 24 dslab-worf.epfl.ch 24 sum 24 dslab-worf.epfl.ch 24
+tac 24 dslab-worf.epfl.ch 24 tail 24 dslab-worf.epfl.ch 24
+tee 24 dslab-worf.epfl.ch 24 test 24 dslab-worf.epfl.ch 24
+tr 24 dslab-worf.epfl.ch 24 tsort 24 dslab-worf.epfl.ch 24
+uniq 24 dslab-worf.epfl.ch 24 uptime 24 dslab-worf.epfl.ch 24
+vdir 24 dslab-worf.epfl.ch 24 wc 24 dslab-worf.epfl.ch 24
+who 24 dslab-worf.epfl.ch 24

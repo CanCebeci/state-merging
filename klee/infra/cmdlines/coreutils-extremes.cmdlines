@@ -1,0 +1,10 @@
+ls:obj-llvm/src/ls.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 10
+sort:obj-llvm/src/sort.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 10
+pr:obj-llvm/src/pr.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 1 10
+cp:obj-llvm/src/cp.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 5
+ptx:obj-llvm/src/ptx.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 5
+sync:obj-llvm/src/sync.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+true:obj-llvm/src/true.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+logname:obj-llvm/src/logname.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+yes:obj-llvm/src/yes.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+unlink:obj-llvm/src/unlink.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10

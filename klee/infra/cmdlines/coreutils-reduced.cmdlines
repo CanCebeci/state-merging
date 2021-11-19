@@ -1,0 +1,47 @@
+base64:obj-llvm/src/base64.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+basename:obj-llvm/src/basename.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+cat:obj-llvm/src/cat.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+cksum:obj-llvm/src/cksum.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+date:obj-llvm/src/date.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+df:obj-llvm/src/df.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+dirname:obj-llvm/src/dirname.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+echo:obj-llvm/src/echo.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+env:obj-llvm/src/env.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+factor:obj-llvm/src/factor.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+fmt:obj-llvm/src/fmt.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+fold:obj-llvm/src/fold.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+head:obj-llvm/src/head.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+nl:obj-llvm/src/nl.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+paste:obj-llvm/src/paste.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+readlink:obj-llvm/src/readlink.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+rm:obj-llvm/src/rm.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+seq:obj-llvm/src/seq.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+sha1sum:obj-llvm/src/sha1sum.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+sha256sum:obj-llvm/src/sha256sum.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+sha512sum:obj-llvm/src/sha512sum.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+shuf:obj-llvm/src/shuf.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+split:obj-llvm/src/split.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+sum:obj-llvm/src/sum.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+tac:obj-llvm/src/tac.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+tee:obj-llvm/src/tee.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+tsort:obj-llvm/src/tsort.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+uniq:obj-llvm/src/uniq.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+uptime:obj-llvm/src/uptime.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+vdir:obj-llvm/src/vdir.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+who:obj-llvm/src/who.bc --sym-args 0 2 5 --sym-args 0 1 10 --sym-files 2 10
+wc:obj-llvm/src/wc.bc --sym-arg 0 4 5 --sym-args 0 1 10 --sym-files 1 10
+od:obj-llvm/src/od.bc --sym-arg 0 4 5 --sym-args 0 1 10 --sym-files 1 10
+test:obj-llvm/src/test.bc --sym-args 0 5 5 --sym-args 0 1 10
+csplit:obj-llvm/src/csplit.bc --sym-args 0 4 5 --sym-args 0 1 10
+pr:obj-llvm/src/pr.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 1 10
+cut:obj-llvm/src/cut.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 1 10
+expr:obj-llvm/src/expr.bc --sym-args 0 4 5 --sym-args 0 1 10
+printf:obj-llvm/src/printf.bc --sym-args 0 4 5 --sym-args 0 1 10
+sort:obj-llvm/src/sort.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 10
+mv:obj-llvm/src/mv.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 5
+cp:obj-llvm/src/cp.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 5
+tail:obj-llvm/src/tail.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 15
+ls:obj-llvm/src/ls.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 10
+tr:obj-llvm/src/tr.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 10
+ptx:obj-llvm/src/ptx.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 5
+stty:obj-llvm/src/stty.bc --sym-args 0 4 5 --sym-args 0 1 10 --sym-files 2 5

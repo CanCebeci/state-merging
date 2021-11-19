@@ -1,0 +1,3 @@
+lighttpd:/var/cloud9/targets/lighttpd-1.x/src/lighttpd.bc -D -f /var/cloud9/targets/lighttpd-1.x/src/minimal.conf
+httpd:/var/cloud9/targets/httpd-2.2.16/.libs/httpd.bc -X --unsafe
+memcached:/var/cloud9/targets/memcached-1.4.5/obj-llvm/memcached-debug.bc
