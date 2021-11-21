@@ -1,20 +1,23 @@
 cd klee-uclibc
-./configure --with-llvm=/llvm-2.6
-make -j8
+./configure --with-llvm=/llvm-2.9
+make -j96
 cd ..
 
 cd stp
-./scripts/configure --with-prefix=$(pwd) --with-cloud9=$(pwd)/../klee
-make
+./clean-install.sh
+mkdir include
+mkdir include/stp
 cp src/c_interface/c_interface.h include/stp
 cd ..
 
 
-ln -s /llvm-2.6/include/llvm/System/Process.h /llvm-2.6/include/llvm/Support/Process.h
+#ln -s /llvm-2.6/include/llvm/System/Process.h /llvm-2.6/include/llvm/Support/Process.h
+apt-get install -y libncurses5-dev libncursesw5-dev dejagnu flex bison protobuf-compiler libprotobuf-dev libboost-thread-dev libboost-system-dev binutils-gold binutils-source
+
 mkdir klee-build
 cd klee-build
-../klee/configure --with-llvmsrc=</path/to/llvm-2.6>
-      --with-llvmobj=</path/to/llvm-2.6-build> \
+REQUIRES_RTTI=1 ../klee/configure --with-llvmsrc=/llvm-2.9 \
+      --with-llvmobj=/llvm-2.9 \
       --with-uclibc=../klee-uclibc --enable-posix-runtime --with-stp=../stp
-make -j8
+REQUIRES_RTTI=1 make
 cd ..
