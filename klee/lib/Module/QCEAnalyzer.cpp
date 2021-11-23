@@ -52,23 +52,8 @@ typedef DenseMap<HotValue, SmallVector<HotValue, 4> > HotValueArgMap;
 static const APInt apZero(QCE_BWIDTH, 0);
 
 QCEAnalyzerPass::QCEAnalyzerPass(TargetData *TD)
-      : CallGraphSCCPass(ID), m_targetData(TD) {
+      : FunctionPass(ID), m_targetData(TD) {
   initializeQCEAnalyzerPassPass(*PassRegistry::getPassRegistry());
-}
-
-bool QCEAnalyzerPass::runOnSCC(CallGraphSCC &SCC) {
-  bool changed = false;
-
-  for (CallGraphSCC::iterator it = SCC.begin(), ie = SCC.end(); it != ie; ++it) {
-    CallGraphNode *CGNode = *it;
-    Function *F = CGNode->getFunction();
-    if (F && !F->isDeclaration()) {
-      bool localChanged = runOnFunction(*CGNode);
-      changed |= localChanged;
-    }
-  }
-
-  return changed;
 }
 
 static bool isIgnored(const Value *hotValueDep) {
@@ -341,8 +326,10 @@ static void addAnnotationAM(Instruction *I, const HotValueArgMap &argMap,
 
 /* Compute query count information for a function described by CGNode,
    annotate the function accordingly. */
-bool QCEAnalyzerPass::runOnFunction(CallGraphNode &CGNode) {
-  Function &F = *CGNode.getFunction();
+bool QCEAnalyzerPass::runOnFunction(Function &F) {
+  if (F.isDeclaration()) {
+    return false;
+  }
   BasicBlock *entryBB = &F.getEntryBlock();
 
   // Split entryBB to have an empty entry block (so that it would contain
@@ -350,8 +337,8 @@ bool QCEAnalyzerPass::runOnFunction(CallGraphNode &CGNode) {
 #warning Does this work correctly with LoopInfo and DominatorTree ?
   entryBB->splitBasicBlock(entryBB->begin());
 
-  LoopInfo &loopInfo = getAnalysis<LoopInfo>(F);
-  DominatorTree &DT = getAnalysis<DominatorTree>(F);
+  LoopInfo &loopInfo = getAnalysis<LoopInfo>();
+  DominatorTree &DT = getAnalysis<DominatorTree>();
 
   // Use count after BB for all hot values
   //UseCountInfo::Factory useCountInfoFactory;

@@ -207,7 +207,7 @@ public:
   virtual bool runOnLoop(llvm::Loop *L, llvm::LPPassManager &LPM);
 };
 
-class QCEAnalyzerPass : public llvm::CallGraphSCCPass {
+class QCEAnalyzerPass : public llvm::FunctionPass {
   llvm::TargetData *m_targetData;
 
 public:
@@ -215,8 +215,7 @@ public:
   QCEAnalyzerPass(llvm::TargetData *TD = 0);
 
   virtual void getAnalysisUsage(llvm::AnalysisUsage &Info) const;
-  virtual bool runOnSCC(llvm::CallGraphSCC &SCC);
-  bool runOnFunction(llvm::CallGraphNode &CGNode);
+  bool runOnFunction(llvm::Function &F);
 };
 
 class CheckpointAnalyzer: public llvm::BasicBlockPass {

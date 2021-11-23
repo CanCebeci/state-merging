@@ -560,7 +560,7 @@ void KModule::prepare(const Interpreter::ModuleOptions &opts,
     pm4.add(createIndVarSimplifyPass()); // Improves trip-count computation
     if (EnableExecIndex)
       pm4.add(new AnnotateLoopPass());
-    pm4.add(new RendezVousPointPass());
+    // pm4.add(new RendezVousPointPass());
     if (EnableQCE)
       pm4.add(new QCEAnalyzerPass(targetData));
     pm4.add(new PhiCleanerPass()); // LoopSimplify pass may have changed PHIs

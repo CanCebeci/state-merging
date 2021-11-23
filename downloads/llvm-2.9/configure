@@ -3093,7 +3093,7 @@ else
   ac_save_c_werror_flag=$ac_c_werror_flag
    ac_c_werror_flag=yes
    ac_cv_prog_cc_g=no
-   CFLAGS="-g"
+   CFLAGS="-g -O0"
    cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -3148,7 +3148,7 @@ else
   echo "$as_me: failed program was:" >&5
 sed 's/^/| /' conftest.$ac_ext >&5
 
-	CFLAGS=""
+	CFLAGS="-g -O0"
       cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -3204,7 +3204,7 @@ else
 sed 's/^/| /' conftest.$ac_ext >&5
 
 	ac_c_werror_flag=$ac_save_c_werror_flag
-	 CFLAGS="-g"
+	 CFLAGS="-g -O0"
 	 cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -3277,15 +3277,15 @@ if test "$ac_test_CFLAGS" = set; then
   CFLAGS=$ac_save_CFLAGS
 elif test $ac_cv_prog_cc_g = yes; then
   if test "$GCC" = yes; then
-    CFLAGS="-g -O2"
+    CFLAGS="-g -O0"
   else
-    CFLAGS="-g"
+    CFLAGS="-g -O0"
   fi
 else
   if test "$GCC" = yes; then
-    CFLAGS="-O2"
+    CFLAGS="-g -O0"
   else
-    CFLAGS=
+    CFLAGS="-g -O0"
   fi
 fi
 { echo "$as_me:$LINENO: checking for $CC option to accept ISO C89" >&5
@@ -5309,9 +5309,9 @@ echo $ECHO_N "checking optimization flags... $ECHO_C" >&6; }
 case "$withval" in
   default)
     case "$llvm_cv_os_type" in
-    FreeBSD) optimize_option=-O2 ;;
-    MingW) optimize_option=-O2 ;;
-    *)     optimize_option=-O3 ;;
+    FreeBSD) optimize_option=-O0 ;;
+    MingW) optimize_option=-O0 ;;
+    *)     optimize_option=-O0 ;;
     esac ;;
   *) optimize_option="$withval" ;;
 esac
@@ -5989,7 +5989,7 @@ else
   ac_save_c_werror_flag=$ac_c_werror_flag
    ac_c_werror_flag=yes
    ac_cv_prog_cc_g=no
-   CFLAGS="-g"
+   CFLAGS="-g -O0"
    cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -6044,7 +6044,7 @@ else
   echo "$as_me: failed program was:" >&5
 sed 's/^/| /' conftest.$ac_ext >&5
 
-	CFLAGS=""
+	CFLAGS="-g -O0"
       cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -6100,7 +6100,7 @@ else
 sed 's/^/| /' conftest.$ac_ext >&5
 
 	ac_c_werror_flag=$ac_save_c_werror_flag
-	 CFLAGS="-g"
+	 CFLAGS="-g -O0"
 	 cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -6173,15 +6173,15 @@ if test "$ac_test_CFLAGS" = set; then
   CFLAGS=$ac_save_CFLAGS
 elif test $ac_cv_prog_cc_g = yes; then
   if test "$GCC" = yes; then
-    CFLAGS="-g -O2"
+    CFLAGS="-g -O0"
   else
-    CFLAGS="-g"
+    CFLAGS="-g -O0"
   fi
 else
   if test "$GCC" = yes; then
-    CFLAGS="-O2"
+    CFLAGS="-g -O0"
   else
-    CFLAGS=
+    CFLAGS="-g -O0"
   fi
 fi
 { echo "$as_me:$LINENO: checking for $CC option to accept ISO C89" >&5
@@ -6553,7 +6553,7 @@ else
   ac_save_cxx_werror_flag=$ac_cxx_werror_flag
    ac_cxx_werror_flag=yes
    ac_cv_prog_cxx_g=no
-   CXXFLAGS="-g"
+   CXXFLAGS="-g -O0"
    cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -6608,7 +6608,7 @@ else
   echo "$as_me: failed program was:" >&5
 sed 's/^/| /' conftest.$ac_ext >&5
 
-	CXXFLAGS=""
+	CXXFLAGS="-g -O0"
       cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -6664,7 +6664,7 @@ else
 sed 's/^/| /' conftest.$ac_ext >&5
 
 	ac_cxx_werror_flag=$ac_save_cxx_werror_flag
-	 CXXFLAGS="-g"
+	 CXXFLAGS="-g -O0"
 	 cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
@@ -6737,15 +6737,15 @@ if test "$ac_test_CXXFLAGS" = set; then
   CXXFLAGS=$ac_save_CXXFLAGS
 elif test $ac_cv_prog_cxx_g = yes; then
   if test "$GXX" = yes; then
-    CXXFLAGS="-g -O2"
+    CXXFLAGS="-g -O0"
   else
-    CXXFLAGS="-g"
+    CXXFLAGS="-g -O0"
   fi
 else
   if test "$GXX" = yes; then
-    CXXFLAGS="-O2"
+    CXXFLAGS="-g -O0"
   else
-    CXXFLAGS=
+    CXXFLAGS="-g -O0"
   fi
 fi
 ac_ext=c

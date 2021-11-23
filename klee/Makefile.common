@@ -35,7 +35,7 @@ CXX.Flags += -DLLVM_23 -fexceptions -std=c++0x
 endif
 CXX.Flags += -I$(PROJ_SRC_ROOT)/stp/include
 CXX.Flags += -fno-omit-frame-pointer -DEXT_HASH_MAP
-CXX.Flags += -DGOOGLE_PROTOBUF_NO_RTTI
+CXX.Flags += -DGOOGLE_PROTOBUF_NO_RTTI -g
 
 PROTOC ?= protoc
 

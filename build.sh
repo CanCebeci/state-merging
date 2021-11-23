@@ -19,5 +19,6 @@ cd klee-build
 REQUIRES_RTTI=1 ../klee/configure --with-llvmsrc=/llvm-2.9 \
       --with-llvmobj=/llvm-2.9 \
       --with-uclibc=../klee-uclibc --enable-posix-runtime --with-stp=../stp
+REQUIRES_RTTI=1 make -n
 REQUIRES_RTTI=1 make
 cd ..

@@ -10,7 +10,9 @@ echo "export PATH=/llvm-gcc4.2-2.9-x86_64-linux/bin:$PATH" >> ~/.bashrc
 
 # get llvm 2.9
 cd llvm-2.9
-REQUIRES_RTTI=1 ./configure --enable-optimized --enable-assertions
+REQUIRES_RTTI=1 ./configure --enable-assertions
+echo "========== LLVM make maken ==========0"
+REQUIRES_RTTI=1 make -n
 REQUIRES_RTTI=1 make -j96
 echo "export PATH=/llvm-2.9/Release+Asserts/bin:$PATH" >> ~/.bashrc
 . ~/.bashrc
