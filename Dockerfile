@@ -9,6 +9,7 @@ COPY klee-uclibc /klee-uclibc
 # copy downloads (instead of using wget in container -- SLL issues)
 COPY downloads/llvm-gcc4.2-2.9-x86_64-linux /llvm-gcc4.2-2.9-x86_64-linux
 COPY downloads/llvm-2.9 /llvm-2.9
+COPY downloads/coreutils-bc /coreutils-bc
 
 RUN chmod u+x build_dependencies.sh && ./build_dependencies.sh
 RUN chmod u+x build.sh && ./build.sh
