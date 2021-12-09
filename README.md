@@ -6,7 +6,7 @@ Changes to Klee worth noting:
 * Klee and LLVM are now compliled with -O0. This can affect the benchamrk results.
 * Rendez-vous points (?!) are disabled
 
-To test get_sign.c: 
+Run this inside the Docker container o test get_sign.c: 
 
 ```
 cd test-klee
@@ -16,3 +16,7 @@ llvm-gcc -I /klee/include -emit-llvm -c -g -O0 get_sign.c
 
 Note about coreutils:
 In the docker container, under /coreutils-bc, there are are the llvm bitcode files for coreutils 6.10. Due to the difficulty of working in Ubuntu 10.04, these were produced in Ubuntu 14.04 and copied here. This does not seem to cause any immediate problems but should be noted nevertheless. 
+
+Credits:
+Original implementation - Volodymyr Kuznetsov, Stefan Bucur
+Reproduction attempt - Can Cebeci, Solal Pirelli
