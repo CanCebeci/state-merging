@@ -13,3 +13,6 @@ cd test-klee
 llvm-gcc -I /klee/include -emit-llvm -c -g -O0 get_sign.c
 /klee-build/Release+Asserts/bin/klee get_sign.o
 ```
+
+Note about coreutils:
+In the docker container, under /coreutils-bc, there are are the llvm bitcode files for coreutils 6.10. Due to the difficulty of working in Ubuntu 10.04, these were produced in Ubuntu 14.04 and copied here. This does not seem to cause any immediate problems but should be noted nevertheless. 
